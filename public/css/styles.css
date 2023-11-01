@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 .title-buttons a,
-button {
+.title-buttons button {
     float: right;
 }
 .title-buttons h1 {
@@ -24,4 +24,10 @@ button {
 
 .clear {
     zoom: 1;
+}
+.green {
+    color: green;
+}
+.hidden {
+    display: none;
 }
