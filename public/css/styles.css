@@ -1,0 +1,27 @@
+.center {
+    text-align: center;
+}
+.remove-decoration a {
+    color: black;
+    text-decoration: none;
+}
+.title-buttons a,
+button {
+    float: right;
+}
+.title-buttons h1 {
+    float: left;
+}
+.clear:before,
+.clear:after {
+    content: "";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    zoom: 1;
+}
