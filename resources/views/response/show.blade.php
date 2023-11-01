@@ -7,6 +7,7 @@
               @method("DELETE")
               <button type="submit" class="btn btn-danger m-2">Delete</button>
               <a href="{{route('response.edit', ['response' => $response->id])}}" class="btn btn-primary m-2">Edit</a>
+              
             </form>
             
             
@@ -22,7 +23,8 @@
               
             </div>
           </div>
-          <button class="btn btn-dark mt-3" onclick="copyContent()">Copy!</button>
+          <button class="btn btn-dark mt-3 mb-3" onclick="copyContent()">Copy!</button>
+          <p class="copy-message green hidden">Copied successfully!</p>
     </div>
 
     <script>
@@ -32,7 +34,7 @@
         const copyContent = async () => {
           try {
             await navigator.clipboard.writeText(text);
-            console.log('Content copied to clipboard');
+            document.querySelector('.copy-message').classList.remove('hidden');
           } catch (err) {
             console.error('Failed to copy: ', err);
           }
